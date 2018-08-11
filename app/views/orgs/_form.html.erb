@@ -1,0 +1,67 @@
+<%= form_with(model: org, local: true) do |form| %>
+  <% if org.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(org.errors.count, "error") %> prohibited this org from being saved:</h2>
+
+      <ul>
+      <% org.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :oid %>
+    <%= form.text_field :oid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :permalink %>
+    <%= form.text_field :permalink %>
+  </div>
+
+  <div class="field">
+    <%= form.label :crunchbase_url %>
+    <%= form.text_field :crunchbase_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :homepage_url %>
+    <%= form.text_field :homepage_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blog_url %>
+    <%= form.text_field :blog_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twitter_username %>
+    <%= form.text_field :twitter_username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category_code %>
+    <%= form.text_field :category_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_employees %>
+    <%= form.text_field :number_of_employees %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

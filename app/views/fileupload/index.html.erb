@@ -1,0 +1,10 @@
+<h1>Fileupload#index</h1>
+<p>Find me in app/views/fileupload/index.html.erb</p>
+
+<%= form_for :index, html: { multipart: true },:method => :get do |f| %>    
+      <%= f.label :attachment %>   
+      <%= f.file_field :attachment %>  
+      <%= f.text_field :waitforsubmit %> 
+      <br>   
+      <%= f.submit "Save" %>   
+   <% end %>   

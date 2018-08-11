@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Orgs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Oid</th>
+      <th>Name</th>
+      <th>Permalink</th>
+      <th>Crunchbase url</th>
+      <th>Homepage url</th>
+      <th>Blog url</th>
+      <th>Twitter username</th>
+      <th>Category code</th>
+      <th>Number of employees</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orgs.each do |org| %>
+      <tr>
+        <td><%= org.oid %></td>
+        <td><%= org.name %></td>
+        <td><%= org.permalink %></td>
+        <td><%= org.crunchbase_url %></td>
+        <td><%= org.homepage_url %></td>
+        <td><%= org.blog_url %></td>
+        <td><%= org.twitter_username %></td>
+        <td><%= org.category_code %></td>
+        <td><%= org.number_of_employees %></td>
+        <td><%= org.description %></td>
+        <td><%= link_to 'Show', org %></td>
+        <td><%= link_to 'Edit', edit_org_path(org) %></td>
+        <td><%= link_to 'Destroy', org, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Org', new_org_path %>

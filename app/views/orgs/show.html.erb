@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Oid:</strong>
+  <%= @org.oid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @org.name %>
+</p>
+
+<p>
+  <strong>Permalink:</strong>
+  <%= @org.permalink %>
+</p>
+
+<p>
+  <strong>Crunchbase url:</strong>
+  <%= @org.crunchbase_url %>
+</p>
+
+<p>
+  <strong>Homepage url:</strong>
+  <%= @org.homepage_url %>
+</p>
+
+<p>
+  <strong>Blog url:</strong>
+  <%= @org.blog_url %>
+</p>
+
+<p>
+  <strong>Twitter username:</strong>
+  <%= @org.twitter_username %>
+</p>
+
+<p>
+  <strong>Category code:</strong>
+  <%= @org.category_code %>
+</p>
+
+<p>
+  <strong>Number of employees:</strong>
+  <%= @org.number_of_employees %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @org.description %>
+</p>
+
+<%= link_to 'Edit', edit_org_path(@org) %> |
+<%= link_to 'Back', orgs_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  averagerating: MyString
+  oid: MyString
+  provenance: MyString
+
+two:
+  name: MyString
+  averagerating: MyString
+  oid: MyString
+  provenance: MyString
